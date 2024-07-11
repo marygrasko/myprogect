@@ -1,0 +1,475 @@
+body {
+  width: 100%;
+}
+body div {
+  margin-bottom: clamp(10px, 5vh, 40px);
+  height: 100%;
+  width: 100%;
+}
+body .scroll_top {
+  color: white;
+  display: none;
+  position: fixed;
+  bottom: 50%;
+  right: 30%;
+  z-index: 1000;
+  width: 15%;
+  height: 8%;
+  background: #000000;
+  border-radius: 6%;
+  opacity: 0.8;
+}
+body .scroll_top ::hover {
+  opacity: 1;
+}
+body .blokone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+}
+body .blokone_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  font-size: 60px;
+  height: 100px;
+  width: 100%;
+}
+body .blokone_info {
+  height: 400px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body .blokone_info_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  height: 100%;
+  width: 100%;
+  margin-right: 10px;
+}
+body .blokone_info_list {
+  border-radius: 10px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: xx-large;
+  font-family: "Times New Roman", Times, serif;
+  opacity: 1;
+  color: white;
+  background: rgba(114, 5, 114, 0.5529411765);
+  margin-right: 250px;
+}
+body .blokone_info_list__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  width: 50%;
+  background: rgba(114, 5, 114, 0.5529411765);
+}
+body .blokone_info_list_button {
+  height: 50px;
+}
+body .bloktwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: rgba(114, 5, 114, 0.231372549);
+}
+body .bloktwo_circklesone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body .bloktwo_circklesone_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  font-weight: 900;
+}
+body .bloktwo_circklesone_text_img {
+  margin-top: 2%;
+  border-width: 10%;
+  border-color: black;
+  border-radius: 100%;
+}
+body .bloktwo_circklesone_text span {
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 2%;
+  font-size: xx-large;
+  font-weight: 1000;
+}
+body .bloktwo_img {
+  margin-top: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+body .bloktwo_img img {
+  vertical-align: middle;
+}
+body .slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+body .text {
+  background-size: 100%;
+  background: rgba(131, 54, 131, 0.2745098039);
+  color: #000000;
+  font-size: xx-large;
+  padding: 8px 12px;
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin-top: 10%;
+}
+body .numbertext {
+  color: #ffffff;
+  font-size: xx-large;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+body .dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+body .active {
+  background-color: #717171;
+}
+body .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade from {
+  opacity: 0.4 to;
+  opacity: 1;
+}
+@keyframes fade from {
+  opacity: 0.4 to;
+  opacity: 1;
+}
+@media only screen and (max-width: 300px) {
+  body .text {
+    font-size: xx-large;
+  }
+}
+body .blokfour {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20%;
+}
+body .blokfour_photo {
+  margin-left: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+body .blokfour_photo span {
+  margin-left: 3%;
+  margin-right: 7%;
+  min-height: 10em;
+  display: table-cell;
+  vertical-align: middle;
+  background: rgba(131, 54, 131, 0.2745098039);
+  color: #000000;
+  font-size: xx-large;
+}
+body .blokfour_list {
+  background: rgba(131, 54, 131, 0.1725490196);
+}
+body .blokfour_list ul {
+  margin: 0;
+  padding: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .blokfour_list ul li {
+  display: inline;
+  margin-right: 5px;
+  border: 3px solid rgba(195, 177, 192, 0.5098039216);
+  padding: 3px;
+  font-size: x-large;
+}
+body .blokfive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+body .blokfive_text_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #570569;
+  font-size: 60px;
+  height: 100px;
+  width: 100%;
+  font-weight: 900;
+}
+body .blokfive_timer_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 48px;
+}
+body .blokfive_timer_item {
+  position: relative;
+  min-width: 60px;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding-bottom: 15px;
+  text-align: center;
+}
+body .blokfive_timer_item::before {
+  content: attr(data-title);
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 14px;
+}
+body .blokfive_timer_item:not(:last-child)::after {
+  content: ":";
+  position: absolute;
+  right: -15px;
+}
+body .blokfive_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+body .blokfive_form_woow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .blokfive_form_woow_one {
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  -webkit-animation: flip 5s infinite;
+          animation: flip 5s infinite;
+  -webkit-animation-delay: calc(0.5s * var(--i));
+          animation-delay: calc(0.5s * var(--i));
+  font-weight: 4%;
+  margin-left: 13%;
+  font-size: xx-large;
+}
+body .blokfive_form_woow_two {
+  font-size: x-large;
+}
+body .blokfive_form_woow_two::before {
+  border-bottom: 2px solid red;
+  position: absolute;
+  content: "";
+  width: 2.7%;
+  height: 2.3%;
+  -webkit-transform: rotate(-8deg);
+          transform: rotate(-8deg);
+}
+body .blokfive_form_contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .blokfive_form_contact_form {
+  color: #7f136d;
+  font-size: xx-large;
+  border-radius: 5px 0 0 50%;
+  background: rgba(195, 177, 192, 0.5098039216);
+  margin-top: 20%;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .blokfive_form_contact_form span {
+  color: red;
+}
+body .blokfive_form_contact_form input {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: x-large;
+  color: black;
+  width: 30%;
+  height: 30px;
+  border-radius: 5px 5px 5px 5px;
+  border-top-color: rgba(205, 22, 174, 0.5098039216);
+}
+
+@-webkit-keyframes flip {
+  0%, 80% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes flip {
+  0%, 80% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}/*# sourceMappingURL=test.css.map */

@@ -1,0 +1,293 @@
+body
+    width: 100%
+    
+    div
+        margin-bottom: clamp(10px, 5vh, 40px)
+        height: 100%
+        width: 100%
+    .scroll_top
+        color: white
+        display: none
+        position: fixed
+        bottom: 50%
+        right: 30%
+        z-index: 1000
+        width: 15%
+        height: 8%
+        background:  #000000
+        border-radius: 6%
+        opacity: 0.8
+    .scroll_top ::hover
+        opacity: 1
+    .blokone
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        flex-wrap: wrap-reverse
+        &_name
+            display: flex
+            align-items: center
+            justify-content: center
+            color: #ffff
+            font-size: 60px
+            height: 100px
+            width: 100%
+        &_info
+            height:400px
+            width: 100%
+            display: flex
+            &_img
+                display: flex
+                justify-content: right
+                height: 100%
+                width: 100%
+                margin-right: 10px
+            &_list
+                border-radius: 10px
+                text-align: center
+                display: flex
+                align-items: left
+                justify-content: left
+                flex-direction: column
+                font-size: xx-large
+                font-family: 'Times New Roman', Times, serif
+                opacity: 1
+                color: #ffff
+                background: #7205728d
+                margin-right: 250px
+                &__text
+                    display: flex
+                    align-items: left
+                    justify-content: left
+                    width: 50%
+                    background: #7205728d
+                &_button
+                    height: 50px
+    .bloktwo
+        
+        display: flex
+        align-items: stretch
+        justify-content: center
+        flex-direction:  row
+        background: #7205723b
+        &_circklesone
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: column
+            &_text
+                display: flex
+                align-items: center
+                justify-content: center
+                flex-direction: column
+                flex-wrap: wrap-reverse
+                font-weight: 900
+                &_img
+                    margin-top: 2%
+                    border-width: 10%
+                    border-color: black
+                    border-radius: 100%
+                span
+                    font-family: 'Times New Roman', Times, serif
+                    margin-top: 2%
+                    font-size: xx-large
+                    font-weight: 1000
+        &_img
+            margin-top:20%
+            display: flex
+            align-items: center
+            justify-content: space-around
+            img
+                vertical-align: middle
+    .slideshow-container
+        max-width: 800px
+        position: relative
+        margin: auto
+    .text 
+        background-size:100%
+        background: #83368346
+        color: #000000
+        font-size: xx-large
+        padding: 8px 12px
+        position: absolute
+        width: 100%
+        height: 30%
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        text-align: center
+        margin-top: 10%
+    .numbertext 
+        color: #ffffff
+        font-size: xx-large
+        padding: 8px 12px
+        position: absolute
+        top: 0
+    .dot 
+        height: 15px
+        width: 15px
+        margin: 0 2px
+        background-color: #bbb
+        border-radius: 50%
+        display: inline-block
+        transition: background-color 0.6s ease
+    .active 
+        background-color: #717171
+    .fade 
+        -webkit-animation-name: fade
+        -webkit-animation-duration: 1.5s
+        animation-name: fade
+        animation-duration: 1.5s
+    @-webkit-keyframes fade from 
+        opacity: .4 to 
+        opacity: 1
+    @keyframes fade from
+        opacity: .4 to 
+        opacity: 1
+    @media only screen and (max-width: 300px) 
+        .text
+            font-size: xx-large
+    .blokfour
+        display: flex
+        flex-direction:  column
+        margin-top: 20%
+        &_photo
+            margin-left: 3%
+            display: flex
+            flex-direction:  row
+            span
+                margin-left: 3%
+                margin-right: 7%
+                min-height: 10em
+                display: table-cell
+                vertical-align: middle
+                background: #83368346
+                color: #000000
+                font-size: xx-large
+        &_list
+            background: #8336832c
+            ul
+                margin: 0 
+                padding: 4px
+                display: flex
+                align-items: center
+                justify-content: center
+                li
+                    display: inline 
+                    margin-right: 5px 
+                    border: 3px solid #c3b1c082 
+                    padding: 3px 
+                    font-size: x-large
+    .blokfive
+        display: flex
+        flex-direction:  column
+        &_text
+            &_name
+                display: flex
+                align-items: center
+                justify-content: center
+                color: #570569
+                font-size: 60px
+                height: 100px
+                width: 100%
+                font-weight: 900
+        &_timer
+            &_items
+                display: flex
+                flex-direction:  row
+                font-size: 48px
+            &_item
+                position: relative
+                min-width: 60px
+                margin-left: 2%
+                margin-right: 2%
+                padding-bottom: 15px
+                text-align: center
+            &_item::before
+                content: attr(data-title)
+                display: block
+                position: absolute
+                left: 50%
+                bottom: 0
+                transform: translateX(-50%)
+                font-size: 14px
+            &_item:not(:last-child)::after
+                content: ':'
+                position: absolute
+                right: -15px
+        &_form
+            display: flex
+            flex-direction: row
+            &_woow
+                display: flex
+                flex-direction:  column
+                text-align: center
+                align-items: center
+                justify-content: center
+                &_one
+                    position: relative
+                    display: inline-block
+                    text-transform: uppercase
+                    animation: flip 5s infinite
+                    animation-delay: calc(.5s * var(--i))
+                    font-weight: 4%
+                    margin-left: 13%
+                    font-size: xx-large
+                &_two
+                    font-size: x-large
+                &_two::before
+                    border-bottom: 2px solid red
+                    position: absolute
+                    content: ""
+                    width: 2.7%
+                    height: 2.3%
+                    transform: rotate(-8deg)
+            &_contact
+                display: flex
+                flex-direction:  column
+                align-items: center
+                justify-content: center
+                &_form
+                    color: #7f136d 
+                    font-size: xx-large
+                    border-radius: 5px 0 0 50%
+                    background: #c3b1c082 
+                    margin-top: 20%
+                    text-align: center
+                    align-items: center
+                    justify-content: center
+                    span
+                        color: red
+                    input
+                        text-align:  center
+                        justify-content: center
+                        font-size: x-large
+                        color: black
+                        width: 30%
+                        height: 30px
+                        border-radius: 5px 5px 5px 5px
+                        border-top-color: #cd16ae82
+
+                    
+@keyframes flip 
+  0%,80% 
+    transform: rotateY(360deg) 
+                        
+
+
+
+
+
+
+
+                
+
+
+                
+
+            
+
+
+
